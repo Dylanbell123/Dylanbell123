@@ -35,6 +35,19 @@ h2{
 section{
   font-size: 20px;
   margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
 }
@@ -190,33 +203,6 @@ li afoot:hover{
   to {opacity: 1}
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
 @media only screen and (max-width: 600px) {
   #logo{
     width: 30%;
@@ -236,6 +222,14 @@ function showSlides(n) {
   padding: 2.5px;
 }
 
+#show{
+  margin-left: 448px;
+}
+
+#hide{
+  margin-left: 452px;
+}
+
 /*Recipe Page*/
 
 h3{
@@ -243,4 +237,13 @@ h3{
   text-align: center;
   font-size: 100%;
   font-weight: bold;
+}
+
+h4{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

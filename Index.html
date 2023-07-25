@@ -16,11 +16,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+  <script>
+      $(document).ready(function(){
+        $("#hide").hide();
+        $("p").hide();
+        $("h4").hide();
+        $("#hide").click(function(){
+          $("p").hide();
+          $("h4").hide();
+          $("#show").show();
+          $("#hide").hide();
+        });
+        $("#show").click(function(){
+          $("#hide").show();
+          $("p").show();
+          $("h4").show();
+          $("#show").hide();
+        });
+      });
+    </script>
+  
   <title> Cooking Cookies</title>
+  <link rel="icon" type="image/x-icon" href="Logo(Final).png">
 </head>
 
 <body>
- <img id="logo" src="Logo(Final).png">
+ <a href="Index.html"><img id="logo" src="Logo(Final).png"></a>
  
   <div id="wrapper">
     
@@ -203,11 +226,23 @@
       to that first heavenly bite.
     </section>
     
+    <button id="show">Learn More</button>
+    <button id="hide">See Less</button>
+    
+    <h4>
+      What Do We Offer?
+    </h4>
+    
+    <p>
+      Discover a delightful array of cookie recipes tailored for everyone, regardless of
+      age. Our collection features a variety of mouthwatering choices, including
+      vegan, gluten-free, and sugar-free options, all crafted to be effortlessly prepared.
+    </p>
     
     <footer>
       Contact Info
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPVcZZFPpcPcrlvhjzdCCLvqTmVMpglfJtWtMBQtLpZCxcfCvNdzBJglkfDWswmfxqMWJD"><img id="icons" src="gmail.png"></a>
-      <a href="Index(recipes).html"><img id="icons" src="insta.png"></a>
+      <a href=""><img id="icons" src="insta.png"></a>
     </footer>
     
   </div>
