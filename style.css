@@ -71,12 +71,12 @@ nav{
   box-shadow: 0px 2px 0px 0px lightgrey;
 }
 
-nav ul li{
+ul li{
   display: inline-block;
   margin: 0 5%;
 }
 
-nav ul li a{
+ul li a{
   display: block;
   padding: 10px;
   color: black;
@@ -87,7 +87,7 @@ li a:hover{
   color: #555555;
 }
 
-nav ul{
+ul{
   width: 60%;
   margin: auto;
 }
@@ -223,11 +223,11 @@ li afoot:hover{
 }
 
 #show{
-  margin-left: 448px;
+  margin-left: 445px;
 }
 
 #hide{
-  margin-left: 452px;
+  margin-left: 449px;
 }
 
 /*Recipe Page*/
