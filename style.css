@@ -203,9 +203,15 @@ li afoot:hover{
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:500px) {
   #logo{
     width: 30%;
+  }
+  #header{
+    width: 60%;
+  }
+  #nav{
+    padding: 20px;
   }
   
   #wrapper{
@@ -214,6 +220,14 @@ li afoot:hover{
   
   .column {
     width: 100%;
+  }
+  
+  section{
+    font-size: 30px;
+  }
+  
+  p{
+    font-size:30px;
   }
 }
 
