@@ -39,6 +39,7 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+  
 </style>
 
 <style>
@@ -74,6 +75,27 @@
 
 </style>
 
+<style>
+  #cookie {
+    position: relative;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes move {
+    0% {left: 0px;}
+    35% {left: 845px}
+    45% {left: 845px}
+    80% {left: 0px;}
+    
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(360deg); }
+    45% { transform: rotate(360deg); }
+    80% { transform: rotate(0deg); }
+  }
+</style>
+
 </head>
 
 <body>
@@ -89,7 +111,7 @@
       </ul>
     </nav>
     
-    <img id="cookie" src="PlaceHolder.png">
+    <img id="cookie" src="cookie.png">
     
     <h2>
       Cookie Recipes
@@ -97,37 +119,40 @@
     
     <div class="row">
       <div class="column">
-        <img id="img" src="Mm.png" alt="M & M" style="width:100%">
-        <h3>M & M</h3>
+        <a href="Recipe(1).html">
+          <img id="img" src="Mm.png" alt="M & M" style="width:100%">
+        </a>
+        <h3>M&M Cookie</h3>
       </div>
       <div class="column">
-        <img id="img" src="Lc.png" alt="Lemon Cookie" style="width:100%">
+        <a href="Recipe(2).html">
+          <img id="img" src="Lc.png" alt="Lemon Cookie" style="width:100%">
+        </a>
         <h3>Lemon Cookie</h3>
       </div>
       <div class="column">
         <img id="img" src="Lh.png" alt="Lofthouse" style="width:100%">
-        <h3>Lofthouse</h3>
+        <h3>Lofthouse Cookie</h3>
       </div>
       <div class="column">
         <img id="img" src="Mc.png" alt="Mint Chocolate" style="width:100%">
-        <h3>Mint Chocolate</h3>
+        <h3>Mint Chocolate Cookie</h3>
       </div>
     </div>
     
     <div class="row">
       <div class="column2">
         <img id="img" src="Dcc.png" alt="Double Choc Chip" style="width:100%">
-        <h3>Double Choc Chip</h3>
+        <h3>Double Choc Chip Cookie</h3>
       </div>
       <div class="column3">
         <img id="img" src="Gs.png" alt="Ginger Snap" style="width:100%">
-        <h3>Ginger Snap</h3>
+        <h3>Ginger Snap Cookie</h3>
       </div>
     </div>
     
-    <footer>
-      Contact Info
-      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPVcZZFPpcPcrlvhjzdCCLvqTmVMpglfJtWtMBQtLpZCxcfCvNdzBJglkfDWswmfxqMWJD"><img id="icons" src="gmail.png"></a>
+    <footer id="footer">
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPVcZZFPpcPcrlvhjzdCCLvqTmVMpglfJtWtMBQtLpZCxcfCvNdzBJglkfDWswmfxqMWJD"><img id="icons" class="center" src="gmail.png"></a>
     </footer>
     
   </div>

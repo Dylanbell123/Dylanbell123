@@ -116,10 +116,6 @@ footer ul li afoot{
   text-decoration: underline;
 }
 
-li afoot:hover{
-  color: pink;
-}
-
 #logo{
   width: 7%;
   display: block;
@@ -223,10 +219,12 @@ li afoot:hover{
   }
   
   section{
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
   }
   
   p{
+    font-family: 'Josefin Sans', sans-serif;
     font-size:30px;
   }
 }
@@ -243,8 +241,6 @@ li afoot:hover{
 #hide{
   margin-left: 449px;
 }
-
-/*Recipe Page*/
 
 h3{
   font-family: 'Montserrat', sans-serif;
@@ -265,4 +261,67 @@ h4{
 #cookie{
   width: 13%;
   padding: 10px;
+}
+
+#recipeimage{
+  width: 30%;
+  float: right;
+}
+
+h5{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  margin-right: 310px;
+}
+
+.center{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#prep{
+  background-color: lightgrey;
+  border: 1px solid black;
+  padding: 1px;
+  margin-left: 25px;
+  margin-right: 350px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+recipeul li{
+  display: inline-block;
+  margin: 0 5%;
+}
+
+recipeul{
+  width: 60%;
+  margin: auto;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  color: #f6f6f6;
+}
+
+.centered{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 140%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+#acookie{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  margin-bottom: 20px;
 }
