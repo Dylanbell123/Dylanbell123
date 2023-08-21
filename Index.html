@@ -22,24 +22,24 @@
       $(document).ready(function(){
         $("#hide").hide();
         $("p").hide();
-        $("h4").hide();
+        $("#more").hide();
         $("#hide").click(function(){
           $("p").hide();
-          $("h4").hide();
+          $("#more").hide();
           $("#show").show();
           $("#hide").hide();
         });
         $("#show").click(function(){
           $("#hide").show();
           $("p").show();
-          $("h4").show();
+          $("#more").show();
           $("#show").hide();
         });
       });
     </script>
   
   <title> Cooking Cookies</title>
-  <link rel="icon" type="image/x-icon" href="Logo(Final).png">
+  <link rel="icon" type="image/x-icon" href="Icon.png">
 </head>
 
 <body>
@@ -51,13 +51,12 @@
       <ul>
         <li> <a href="Index.html"> Home </a> </li>
         <li> <a href="Index(recipes).html">Recipes</a> </li>
-        <li> <a href="Allergy.html">Allergy Concerns</a> </li>
         <li> <a href="Questionsqueries.html">Questions & Queries</a> </li>
       </ul>
     </nav>
     
     <header style="text-decoration:underline;">
-      <img id="header" src="Cooking Cookies.png">
+      <img id="header" src="Header.png">
     </header>
     
     <h1>
@@ -227,10 +226,16 @@
       to that first heavenly bite.
     </section>
     
+    <h4>Disclamer:</h4>
+    
+    <section>
+      If you have any food-related allergies, please exercise caution and carefully review the recipes provided. Certain recipes have been specifically crafted to accommodate individuals who are gluten-free or have specific food allergies.
+    </section>
+    
     <a href="#footer"><button id="show">Learn More</button></a>
     <button id="hide">See Less</button>
     
-    <h4>
+    <h4 id="more">
       What Do We Offer?
     </h4>
     
