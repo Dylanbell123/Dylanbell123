@@ -9,7 +9,8 @@ body{
   background-color: #eef8ff;
   margin: auto;
   padding: 10px;
-  box-shadow:5px 8px 8px 5px #333333;
+  box-shadow: 5px 8px 8px 5px #333333;
+  margin-bottom: 30px;
 }
 
 header{
@@ -17,16 +18,16 @@ header{
 }
 
 h1{
-  font-size: 35px;
+  font-size: 60px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   text-align: center;
-  margin-top: -5px;
+  margin-top: 10px;
 }
 
 h2{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
   text-align: center;
   margin-top: 25px;
@@ -42,6 +43,13 @@ section{
   text-align: center;
 }
 
+#box{
+  border: 2px solid black;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+
 p{
   font-size: 20px;
   margin-top: 20px;
@@ -53,10 +61,11 @@ p{
 }
 
 #header{
-  width: 70%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
 }
 
 nav{
@@ -73,12 +82,12 @@ nav{
 
 ul li{
   display: inline-block;
-  margin: 0 5%;
+  margin: 0 7%;
 }
 
 ul li a{
   display: block;
-  padding: 10px;
+  padding: 30px;
   color: black;
   text-decoration: underline;
 }
@@ -101,7 +110,6 @@ footer{
   margin-bottom: -10px;
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0px 0px 0px 0px black;
 }
 
 footer ul li{
@@ -236,10 +244,40 @@ footer ul li afoot{
 
 #show{
   margin-left: 445px;
+  padding: 12px 20px;
+  background-color: #00CCFF;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  box-shadow: 0 9px #999;
+  cursor: pointer;
+  border: none;
+}
+
+.button1 {border-radius: 6px;}
+
+#show:hover{
+  background-color: cyan;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #hide{
   margin-left: 449px;
+  padding: 12px 20px;
+  background-color: #00CCFF;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  box-shadow: 0 9px #999;
+  cursor: pointer;
+  border: none;
+}
+
+.button2 {border-radius: 6px;}
+
+#hide:hover{
+  background-color: cyan;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 h3{
@@ -251,11 +289,11 @@ h3{
 
 h4{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
+  margin-top: 15px;
 }
 
 #cookie{
@@ -272,6 +310,8 @@ h5{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   margin-right: 310px;
+  margin-top: -10px;
+  margin-bottom: 7px;
 }
 
 .center{
