@@ -44,7 +44,7 @@ input[type=submit] {
   color: black;
   padding: 12px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
   float: right;
   font-family: 'Montserrat', sans-serif;
@@ -94,18 +94,22 @@ input[type=submit]:hover {
   
   </head>
   
-  <body>
+  <body id="background">
     <img id="logo" src="Logo(Final).png">
  
   <div id="wrapper">
     
+    <header style="text-decoration:underline;">
+      <img id="header" src="Header.png">
+    </header>
+    
     <nav>
       <ul>
-        <li> <a href="Index.html"> Home </a> </li>
-        <li> <a href="Index(recipes).html">Recipes</a> </li>
-        <li> <a href="Questionsqueries.html">Questions & Queries</a> </li>
+        <li> <a href="Index.html"><button id="navbutton" class="button button3">Home</button></a> </li>
+        <li> <a href="Index(recipes).html"><button id="navbutton" class="button button3">Recipes</button></a></li>
+        <li> <a href="Questionsqueries.html"><button id="navbutton" class="button button3">Feedback</button></a> </li>
       </ul>
-      </nav>
+    </nav>
       
       <h2>Questions & Queries</h2>
       

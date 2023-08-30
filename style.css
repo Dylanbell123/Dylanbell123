@@ -4,6 +4,13 @@ body{
   margin: 0;
 }
 
+#background{
+  background-image: url('Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #wrapper{
   width: 990px;
   background-color: #eef8ff;
@@ -11,6 +18,7 @@ body{
   padding: 10px;
   box-shadow: 5px 8px 8px 5px #333333;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 header{
@@ -22,7 +30,8 @@ h1{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
+  text-decoration: underline;
 }
 
 h2{
@@ -31,6 +40,7 @@ h2{
   font-weight: bold;
   text-align: center;
   margin-top: 25px;
+  text-decoration: underline;
 }
 
 section{
@@ -48,6 +58,7 @@ section{
   margin-left: 60px;
   margin-right: 60px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 p{
@@ -65,41 +76,58 @@ p{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 nav{
-  background-image: linear-gradient(lightblue, #d1f5ff);
+  background-image: linear-gradient(lightgrey, #eeeeee);
   color: black;
-  padding: 10px;
+  padding: 3px;
   margin-top: -10px;
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0px 2px 0px 0px lightgrey;
+  box-shadow: 0px 3px 0px 0px lightgrey;
 }
 
 ul li{
   display: inline-block;
-  margin: 0 7%;
+  margin: 0 9%;
 }
 
 ul li a{
   display: block;
-  padding: 30px;
+  padding: 15px;
   color: black;
   text-decoration: underline;
-}
-
-li a:hover{
-  color: #555555;
 }
 
 ul{
   width: 95%;
   margin: auto;
 }
+
+#navbutton{
+  padding: 10px 14px;
+  background-color: darkgrey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid darkgrey;
+  box-shadow: 0 9px #999;
+}
+
+#navbutton:hover{
+  background-color: #bbbbbb;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button3 {border-radius: 20px;}
+
+
 
 footer{
   background-image: linear-gradient(grey, darkgrey);
@@ -110,6 +138,7 @@ footer{
   margin-bottom: -10px;
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 0px 0px 10px 10px;
 }
 
 footer ul li{
@@ -243,7 +272,7 @@ footer ul li afoot{
 }
 
 #show{
-  margin-left: 445px;
+  margin-left: 429px;
   padding: 12px 20px;
   background-color: #00CCFF;
   font-family: 'Montserrat', sans-serif;
@@ -253,7 +282,7 @@ footer ul li afoot{
   border: none;
 }
 
-.button1 {border-radius: 6px;}
+.button1 {border-radius: 20px;}
 
 #show:hover{
   background-color: cyan;
@@ -262,7 +291,7 @@ footer ul li afoot{
 }
 
 #hide{
-  margin-left: 449px;
+  margin-left: 438px;
   padding: 12px 20px;
   background-color: #00CCFF;
   font-family: 'Montserrat', sans-serif;
@@ -272,7 +301,7 @@ footer ul li afoot{
   border: none;
 }
 
-.button2 {border-radius: 6px;}
+.button2 {border-radius: 20px;}
 
 #hide:hover{
   background-color: cyan;
@@ -297,20 +326,21 @@ h4{
 }
 
 #cookie{
-  width: 13%;
-  padding: 10px;
+  width: 9%;
+  margin-top: 10px;
 }
 
 #recipeimage{
   width: 30%;
   float: right;
+  border-radius: 10px;
 }
 
 h5{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   margin-right: 310px;
-  margin-top: -10px;
+  margin-top: 15px;
   margin-bottom: 7px;
 }
 
@@ -364,4 +394,13 @@ recipeul{
   filter: blur(8px);
   -webkit-filter: blur(8px);
   margin-bottom: 20px;
+}
+
+#img{
+  border-radius: 10px;
+}
+
+#link{
+  text-decoration: none;
+  color: black;
 }

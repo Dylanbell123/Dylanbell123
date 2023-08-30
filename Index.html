@@ -23,42 +23,53 @@
         $("#hide").hide();
         $("p").hide();
         $("#more").hide();
+        $("#box").hide();
         $("#hide").click(function(){
           $("p").hide();
           $("#more").hide();
           $("#show").show();
           $("#hide").hide();
+          $("#box").hide();
         });
         $("#show").click(function(){
           $("#hide").show();
           $("p").show();
           $("#more").show();
+          $("#box").show();
           $("#show").hide();
         });
       });
     </script>
-  
+    
+    <style>
+    html {
+      scroll-behavior: smooth;
+      }
+    </style>
+   
   <title> Cooking Cookies</title>
   <link rel="icon" type="image/x-icon" href="Icon.png">
   
 </head>
 
-<body>
+<body id="background">
  <img id="logo" src="Logo(Final).png">
  
   <div id="wrapper">
     
-    <nav>
-      <ul>
-        <li> <a href="Index.html"> Home </a> </li>
-        <li> <a href="Index(recipes).html">Recipes</a> </li>
-        <li> <a href="Questionsqueries.html">Questions & Queries</a> </li>
-      </ul>
-    </nav>
-    
     <header style="text-decoration:underline;">
       <img id="header" src="Header.png">
     </header>
+    
+    <nav>
+      <ul>
+        <li> <a href="Index.html"><button id="navbutton" class="button button3">Home</button></a> </li>
+        <li> <a href="Index(recipes).html"><button id="navbutton" class="button button3">Recipes</button></a></li>
+        <li> <a href="Questionsqueries.html"><button id="navbutton" class="button button3">Feedback</button></a> </li>
+      </ul>
+    </nav>
+    
+    
     
     <h1>
       Favourite Cookie Recipes
@@ -159,23 +170,23 @@
     }
     </style>
 
-    <div class="slideshow-container">
+    <div id="slideshow" class="slideshow-container">
     
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="Dcc.png" style="width:100%">
+      <a href="Recipe(5).html"><img id="img" src="Dcc.png" style="width:100%"></a>
       <div class="text">Double Choc Chip</div>
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <a href="Recipe(3).html"><img src="Lh.png" style="width:100%"></a>
+      <a href="Recipe(3).html"><img id="img" src="Lh.png" style="width:100%"></a>
       <div class="text">Lofthouse</div>
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <a href="Recipe(1).html"><img src="Mm.png" style="width:100%"></a>
+      <a href="Recipe(1).html"><img id="img" src="Mm.png" style="width:100%"></a>
       <div class="text">M & M</div>
     </div>
     
@@ -227,16 +238,8 @@
       to that first heavenly bite.
     </section>
     
-    <div id="box">
-    <h4>Disclamer:</h4>
-      
-    <section>
-      If you have any food-related allergies, please exercise caution and carefully review the recipes provided. Certain recipes have been specifically crafted to accommodate individuals who are gluten-free or have specific food allergies.
-    </section>
-    </div>
-    
     <a href="#footer"><button id="show" class="button button1">Learn More</button></a>
-    <button id="hide" class="button button2">See Less</button>
+    <a href="#slideshow"><button id="hide" class="button button2">See Less</button></a>
     
     <h4 id="more">
       What Do We Offer?
@@ -251,6 +254,14 @@
     <p>
       The recipes offered to you are mere simple guidelines; feel free to modify, substitute ingredients, and add new elements to your heart's desire.
     </p>
+    
+        <div id="box">
+    <h4>Disclamer:</h4>
+      
+    <section>
+      If you have any food-related allergies, please exercise caution and carefully review the recipes provided. Certain recipes have been specifically crafted to accommodate individuals who are gluten-free or have specific food allergies.
+    </section>
+    </div>
     
     <footer id="footer">
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPVcZZFPpcPcrlvhjzdCCLvqTmVMpglfJtWtMBQtLpZCxcfCvNdzBJglkfDWswmfxqMWJD"><img id="icons" class="center" src="gmail.png"></a>
